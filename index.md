@@ -55,7 +55,8 @@ hashType (y):       Number (0=Argon2d, 1=Argon2i, 2=Argon2id)
 ![](crack.png)
 
 ```sh
-# In this command -c option is used to specify Argon2id type hash & -v for Verbose output.
+# In this command -c option is used to specify Argon2id type hash.
+# To get verbose result -v option is used.
 # Default wordlist is used if no wordlist is specified.
 > ./crack_argon2.py -c '< Argon2 Hash >' -v
 ```
