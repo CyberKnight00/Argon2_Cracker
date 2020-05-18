@@ -1,16 +1,12 @@
 ## Argon2 hash Cracker
 ### [_Click for **Web View..**_](https://CyberKnight00.github.io/Argon2_Cracker/)
 
-```
 It is a great tool for cracking or recovering Argon2 hashed password.
 This tool support all variants of Argon2 hash.
-```
 
 ### What is Argon2
 
-```
 Argon2 is a key derivation function that was selected as the winner of the Password Hashing Competition in July 2015. It is designed by Alex Biryukov, Daniel Dinu, and Dmitry Khovratovich from University of Luxembourg. Argon2 has 3 variants : Argon2d, Argon2i and Argon2id.
-```
 
 [ Know More ](https://en.wikipedia.org/wiki/Argon2)
 
@@ -53,7 +49,8 @@ hashType (y):       Number (0=Argon2d, 1=Argon2i, 2=Argon2id)
 #### Argon2 hash recovering
 
 ```sh
-# In this command -c option is used to specify Argon2id type hash and default word-list (/usr/share/wordlists/fasttrack.txt) is used.
+# In this command -c option is used to specify Argon2id type hash.
+# Default word-list (/usr/share/wordlists/fasttrack.txt) is used if no wordlist is specified.
 > ./crack_argon2.py -c '< Argon2 hash >'
 ```
 ![](crack.png)
