@@ -30,7 +30,7 @@ hashType (y):       Number (0=Argon2d, 1=Argon2i, 2=Argon2id)
 ### Download and Setup
 ```sh
 > git clone https://github.com/CyberKnight00/Argon2_Cracker.git
-> pip3 -r requirement.txt
+> pip3 install -r requirement.txt
 > chmod +x crack_argon2.py
 ```
 ### Usage
