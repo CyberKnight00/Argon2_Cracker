@@ -59,7 +59,7 @@ if __name__ == '__main__':
                     result = future.result()[1]
                     os._exit(1)
     else:
-    	# Go rouge
+    	# Go rogue
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = {executor.submit(check, word) for word in open(wordlist, 'r', encoding='Latin-1').read().splitlines()}
             for future in concurrent.futures.as_completed(futures):
@@ -70,4 +70,4 @@ if __name__ == '__main__':
         print("Plaintext found:",result)
         print("Total time taken : {}".format(time.time() - start))
     else:
-        print("plain text not found !!!\nTotal time taken : {}".format(time.time() - start))
+        print("Plain text not found !!!\nTotal time taken : {}".format(time.time() - start))
